@@ -1,0 +1,31 @@
+# Backend/
+# ├── config/
+# │   └── db.js          → MongoDB se connection karta hai
+# │
+# ├── models/
+# │   └── User.js        → Database mein User kaisa dikhega (schema)
+# │   └── Job.js         → Database mein Job kaisa dikhega (schema)
+# │
+# ├── controllers/
+# │   └── authController.js  → Register/Login ka logic
+# │   └── jobController.js   → Job add/delete/update ka logic
+# │
+# ├── middleware/
+# │   └── authMiddleware.js  → JWT token check karta hai (guard)
+# │
+# ├── routes/
+# │   └── authRoutes.js  → /api/auth/register, /api/auth/login URLs
+# │   └── jobRoutes.js   → /api/jobs URLs
+# │
+# └── server.js          → Sab kuch ek jagah jodta hai, server start karta hai
+
+
+
+# Real life analogy: 🏨 Hotel jaisa samjho:
+
+# server.js = Hotel ka main gate — sab andar se guzarta hai
+# routes = Reception — kahan jaana hai batata hai
+# controllers = Staff — actual kaam karta hai
+# models = Register — data kaisa store hoga
+# middleware = Security guard — token check karta hai
+# config/db.js = Hotel ka water/electricity connection — database se connection
