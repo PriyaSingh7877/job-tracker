@@ -4,8 +4,9 @@ import axios from 'axios'
 // base URL set kiya - yahan backend chal raha hai
 // har API call mein ye URL automatically lagega aage
 const API = axios.create({
-  baseURL: `${import.meta.env.VITE_API_URL}/api`
+  baseURL: 'http://localhost:5000/api'
 })
+
 // ========== AUTH APIs ==========
 
 // Register API call

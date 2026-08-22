@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 
 // ye function har protected route pe pehle chalega
 // jaise security guard - token check karega
-const authMiddleware = (req, res, next) => {
+const authmiddleware = (req, res, next) => {
   try {
     // request ke header se token lo
     const token = req.headers.authorization?.split(' ')[1]
@@ -28,4 +28,4 @@ const authMiddleware = (req, res, next) => {
   }
 }
 
-module.exports = authMiddleware
+module.exports = authmiddleware
