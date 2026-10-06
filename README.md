@@ -38,12 +38,5 @@ cd Frontend
 npm install
 npm run dev
 ```
-
-## 🔮 Coming Soon
-- Email OTP Verification
-- Google OAuth
-- AI Cover Letter Generator
-- React Native Mobile App
-
 ---
 **Made with ❤️ by Priya Singh**
